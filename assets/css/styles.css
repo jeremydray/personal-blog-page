@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    text-align: center;
+    flex: 50%;
+    border: 1px solid;
+}
+
+input {
+    width: 500px
+}
+
+#content {
+    height: 30%;
+}
