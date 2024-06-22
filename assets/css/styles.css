@@ -2,9 +2,35 @@
     max-width: 1500px;
 }
 
+
+
+.light {
+    background-color: rgb(230, 231, 232);
+    color: rgb(10, 18, 77)
+}
+
+.light p {
+    background: linear-gradient(#c3ee25, #ffab02);
+}
+
+.dark {
+    background-color: rgb(11, 17, 45);
+    color: rgb(255, 245, 109);
+}
+
+.dark p {
+    background: linear-gradient(#abe3f0, #017565);
+
+}
+
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+header input {
+    width: 20px;
+    height: 20px;
 }
 
 main {
@@ -19,12 +45,10 @@ section {
     border: 1px solid;
     width: 45%;
     min-height: 50vh;
-    max-height: 85vh;
+    max-width: 85vh;
     margin: 10px;
     padding: 30px;
-    background-color: #2c5385;
     font-size: 28px;
-    color: rgb(245, 255, 233);
     text-decoration: underline;
 }
 
@@ -34,11 +58,11 @@ p {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    border: 3px solid teal;
+    border: 3px solid rgb(165, 85, 5);
     font-size: 56px;
     font-weight: 100;
     border-radius: 50%;
-    background: linear-gradient(#abe3f0, #017565);
+
     text-wrap: nowrap;
 }
 
