@@ -34,11 +34,8 @@ textarea {
 }
 
 #content {
-    height: 9.5em;
+    height: 15.5em;
 }
-
-
-
 
 
 section {
@@ -65,4 +62,34 @@ p {
     font-weight: 100;
     border-radius: 50%;
     text-wrap: nowrap;
+}
+
+@media screen and (max-width: 766px) {
+
+    section {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        height: auto;
+        margin: 10px;
+        font-size: 28px;
+        text-decoration: underline;
+    }
+
+    p {
+        display: flex;
+        flex: auto;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        border: 3px solid rgb(165, 85, 5);
+        font-size: 28px;
+        font-weight: 100;
+        border-radius: 50%;
+        text-wrap: nowr;
+    }
+
+
 }

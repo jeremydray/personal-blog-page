@@ -7,29 +7,38 @@ let blogs = [];
 
 submit.addEventListener('click', function (event) {
     event.preventDefault();
-    const blogPost = {
-        username: username.value,
-        title: title.value,
-        content: content.value.trim(),
-    }
-    if (localStorage.getItem('submission') === null) {
-        blogs.push(blogPost);
-        username.value = '';
-        title.value = '';
-        content.value = '';
-        localStorage.setItem('submission', JSON.stringify(blogs))
-    }
 
-    else {
-        const blogSave = JSON.parse(localStorage.getItem('submission', blogPost)); {
-            blogs = blogSave
+    if (title.value === "") {
+        alert("Title cannot be blank.")
+    } else if (username.value === "") {
+        alert("Username can't be blank.")
+    } else if (content.value === "") {
+        alert("Blog content cannot be blank.")
+    } else {
+        const blogPost = {
+            username: username.value,
+            title: title.value,
+            content: content.value.trim(),
+        }
+        if (localStorage.getItem('submission') === null) {
             blogs.push(blogPost);
             username.value = '';
             title.value = '';
             content.value = '';
+            localStorage.setItem('submission', JSON.stringify(blogs))
         }
-        localStorage.setItem('submission', JSON.stringify(blogs))
+
+        else {
+            const blogSave = JSON.parse(localStorage.getItem('submission', blogPost)); {
+                blogs = blogSave
+                blogs.push(blogPost);
+                username.value = '';
+                title.value = '';
+                content.value = '';
+            }
+            localStorage.setItem('submission', JSON.stringify(blogs))
+        }
+        document.location.href = "blog.html"
     }
-    document.location.href = "blog.html"
 })
 
