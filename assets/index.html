@@ -4,32 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My First Blog!</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body class="container light">
     <header>
         <h1>My First Blog</h1>
-        <input type="checkbox" id="theme-switcher">
+        <a href="blog.html"><button>Jump to Blog Posts</button></a>
+        <label><input type="checkbox" id="theme-switcher">Click to Toggle Light/Dark Mode</label>
     </header>
     <main>
         <section>
             <p>My First Blog</p>
         </section>
         <section>
+            <h3>Blog Title</h3>
+            <input id="title" placeholder="Enter Blog Title">
             <h3>Username</h3>
-            <input placeholder="Enter Username">
-            <h3>Title</h3>
-            <input placeholder="Enter Title">
+            <input id="username" placeholder="Enter Username">
             <h3>Content</h3>
-            <textarea id=content placeholder="What's on your mind?"></textarea>
+            <textarea id="content" placeholder="What's on your mind?"></textarea>
             <br>
-            <button type="button">Submit!</button>
+            <button id="submit">Submit!</button>
         </section>
-        <script src="js/logic.js"></script>
-        <script src="js/form.js"></script>
+
+
     </main>
+    <footer>
+        <a href="https://jeremydray.github.io/jeremiah-portfolio" id="portfolio" target="_blank">Visit my portfolio!</a>
+    </footer>
+    <script src="js/logic.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>

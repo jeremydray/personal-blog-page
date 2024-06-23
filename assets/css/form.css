@@ -1,0 +1,68 @@
+main {
+    display: flex;
+    padding: 8px;
+    border: black 2px solid;
+}
+
+
+.light p {
+    background: linear-gradient(#c3ee25, #ffab02);
+}
+
+.dark p {
+    background: linear-gradient(#abe3f0, #017565);
+}
+
+.dark main {
+    border: rgb(255, 252, 216) 2px solid;
+}
+
+input,
+textarea {
+    width: 85%;
+    height: 1.5em;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+h3,
+input,
+textarea {
+    margin-top: 20px;
+    font-weight: bold;
+
+}
+
+#content {
+    height: 9.5em;
+}
+
+
+
+
+
+section {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    width: 45%;
+    min-height: 50vh;
+    max-width: 85vh;
+    margin: 10px;
+    padding: 30px;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+p {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    border: 3px solid rgb(165, 85, 5);
+    font-size: 56px;
+    font-weight: 100;
+    border-radius: 50%;
+    text-wrap: nowrap;
+}

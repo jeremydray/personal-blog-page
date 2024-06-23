@@ -1,86 +1,65 @@
 * {
     max-width: 1500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
 
 .light {
     background-color: rgb(230, 231, 232);
     color: rgb(10, 18, 77)
 }
 
-.light p {
-    background: linear-gradient(#c3ee25, #ffab02);
-}
-
 .dark {
     background-color: rgb(11, 17, 45);
-    color: rgb(255, 245, 109);
-}
-
-.dark p {
-    background: linear-gradient(#abe3f0, #017565);
+    color: rgb(255, 252, 216);
 
 }
 
 header {
     display: flex;
     justify-content: space-around;
+    height: 8vh;
 }
+
+h1 {
+    font-size: 48px;
+    margin-top: 24px
+}
+
 
 header input {
-    width: 20px;
-    height: 20px;
+    width: 0px;
+    height: 0px;
+    margin-top: 20px;
 }
 
-main {
-    display: flex;
-    padding: 8px;
-    border: black 2px solid;
+label {
+    margin-top: 24px;
+    font-size: 20px;
 }
-
-section {
-    justify-content: center;
-    align-items: center;
-    border: 1px solid;
-    width: 45%;
-    min-height: 50vh;
-    max-width: 85vh;
-    margin: 10px;
-    padding: 30px;
-    font-size: 28px;
-    text-decoration: underline;
-}
-
-p {
-    display: flex;
-    flex: auto;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    border: 3px solid rgb(165, 85, 5);
-    font-size: 56px;
-    font-weight: 100;
-    border-radius: 50%;
-
-    text-wrap: nowrap;
-}
-
-input,
-textarea {
-    width: 85%;
-    height: 1.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
-}
-
-#content {
-    height: 5.5em;
-}
-
-
 
 button {
     padding: 7px;
     margin: 10px;
+}
+
+footer #portfolio {
+    display: block;
+    margin-top: 8px;
+    font-size: 50px;
+}
+
+#portfolio:link,
+#portfolio:visited {
+    background-color: rgb(92, 160, 158);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#portfolio:hover,
+#portfolio:active {
+    background-color: rgb(64, 127, 125);
+    ;
 }
