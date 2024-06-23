@@ -4,6 +4,7 @@ main {
     border: black 2px solid;
 }
 
+/* Light and Dark mode settings based on class set to the elements on the HTML */
 
 .light p {
     background: linear-gradient(#c3ee25, #ffab02);
@@ -63,6 +64,8 @@ p {
     border-radius: 50%;
     text-wrap: nowrap;
 }
+
+/* Media query settings for smaller screens/devices */
 
 @media screen and (max-width: 766px) {
 

@@ -4,6 +4,7 @@ const clearPost = document.querySelector('#clearAll');
 
 let blogsStored = []
 
+// Calls locally stored data in usable object format in order to use for blogAdd() function below. 
 function blogRecall() {
     if (localStorage.getItem('submission')) {
         const blogEntry = JSON.parse(localStorage.getItem('submission'));
@@ -12,6 +13,8 @@ function blogRecall() {
         }
     }
 }
+
+// Loop that uses locally stored data called above to create and append the section elements containing each blog post, both previously submitted and newly added
 function blogAdd() {
     if (blogsStored !== null) {
         for (i = 0; i < blogsStored.length; i++) {
@@ -42,7 +45,7 @@ function blogAdd() {
     }
 }
 
-
+// Function that allows user to click a button in order to remove all locally saved data to start over; provides confirmation in order to prevent accidental deletion
 clearPost.addEventListener('click', function (event) {
     event.preventDefault();
     const confirm = window.confirm("Are you SURE you would like to delete these posts?")

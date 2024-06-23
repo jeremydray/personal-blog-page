@@ -5,9 +5,12 @@ const submit = document.getElementById('submit');
 
 let blogs = [];
 
+// Takes user input in order to store into local storage to be used on blog.js page; automatically redirects the user to the blog page to see their new page.
+
 submit.addEventListener('click', function (event) {
     event.preventDefault();
 
+    // Checks inputs for any blanks and quits function/alerts user until all fields are filled.
     if (title.value === "") {
         alert("Title cannot be blank.")
     } else if (username.value === "") {
@@ -27,7 +30,7 @@ submit.addEventListener('click', function (event) {
             content.value = '';
             localStorage.setItem('submission', JSON.stringify(blogs))
         }
-
+        // Pulls the locally stored data, parses back into object array, adds the new blog post, and re-stringifies to local storage
         else {
             const blogSave = JSON.parse(localStorage.getItem('submission', blogPost)); {
                 blogs = blogSave

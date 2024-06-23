@@ -3,6 +3,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Light and Dark mode settings based on class set to the elements on the HTML */
+
 .light {
     background-color: rgb(230, 231, 232);
     color: rgb(10, 18, 77)
